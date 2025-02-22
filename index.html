@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modo Escuro com Tailwind</title>
+    <title>Paulo WD</title>
 
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,28 +25,54 @@
             <div class="lg:flex lg:items-center lg:justify-end md:flex md:items-center md:justify-end hidden w-full">
                 <div class="font-thin mr-10">Início</div>
                 <div class="font-thin mr-10">Sobre</div>
-                <div class="font-thin">Serviços</div>
+                <div class="font-thin mr-10">Serviços</div>
+                <div class="font-thin cursor-pointer" onclick="toggleTheme()">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="svg-sol" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 3v1.5M12 19.5V21M4.22 4.22l1.06 1.06M18.72 18.72l1.06 1.06M3 12h1.5M19.5 12H21M4.22 19.78l1.06-1.06M18.72 5.28l1.06-1.06M8.25 12a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0z" />
+                    </svg>
+                </div>
+                <div class="font-thin cursor-pointer" onclick="toggleTheme()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" id="svg-lua" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.752 15.002A9.716 9.716 0 0112 21.75 9.75 9.75 0 019.002 3.247a6.75 6.75 0 0012.75 11.755z" />
+                    </svg>
+                </div>
             </div>
-            <div class="lg:hidden md:hidden flex items-center justify-end w-full">
+            <div class="lg:hidden md:hidden flex items-center justify-end cursor-pointer w-full relative"
+                onclick="toggleDropdown()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-8 h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12h.008m5.992 0h.008m5.992 0h.008" />
                 </svg>
+                <div id="dropdown"
+                    class="absolute mt-60 bg-white border dark:border-gray-50 border-black-100 shadow-md rounded-md hidden bg-white text-black dark:bg-[#121212] dark:text-white">
+                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200 rounded-t-md">Início</a>
+                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200">Sobre</a>
+                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200">Serviços</a>
+                    <a onclick="toggleTheme()"
+                        class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200 rounded-b-md">
+                        <div class="font-thin cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="svg-sol-mobile" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 3v1.5M12 19.5V21M4.22 4.22l1.06 1.06M18.72 18.72l1.06 1.06M3 12h1.5M19.5 12H21M4.22 19.78l1.06-1.06M18.72 5.28l1.06-1.06M8.25 12a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0z" />
+                            </svg>
+                        </div>
+                        <div class="font-thin cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" id="svg-lua-mobile" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.752 15.002A9.716 9.716 0 0112 21.75 9.75 9.75 0 019.002 3.247a6.75 6.75 0 0012.75 11.755z" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-
-    <div></div>
-
-    <div></div>
-    <!-- <div class="bg-gray-100 dark:bg-[#121212] glass-effect p-6 rounded-lg shadow-lg text-center">
-        <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Modo Escuro com Tailwind</h1>
-        <p class="text-gray-700 dark:text-gray-300 mt-2">Clique no botão para alternar entre claro e escuro.</p>
-        <button id="toggleTheme" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded dark:bg-yellow-500">
-            Alternar Tema
-        </button>
-    </div> -->
-
 
     <script src="footer.js"></script>
 </body>
