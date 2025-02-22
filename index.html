@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo Escuro com Tailwind</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="header.js"></script>
+
+</head>
+
+<!-- h-screen -->
+
+<body class="transition-colors duration-300 bg-white text-black dark:bg-[#121212] dark:text-white">
+
+
+    <div
+        class="flex items-center justify-center bg-white text-black dark:bg-[#121212] dark:text-white line-bottom-menu">
+        <div class="flex items-center justify-between w-full pt-3 pb-3 lg:pr-10 md:pr-10 pr-5 pl-5 mb-1">
+            <div class="font-thin w-full">Paulo Web Developer</div>
+            <div class="lg:flex lg:items-center lg:justify-end md:flex md:items-center md:justify-end hidden w-full">
+                <div class="font-thin mr-10">Início</div>
+                <div class="font-thin mr-10">Sobre</div>
+                <div class="font-thin">Serviços</div>
+            </div>
+            <div class="lg:hidden md:hidden flex items-center justify-end w-full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12h.008m5.992 0h.008m5.992 0h.008" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div></div>
+
+    <div></div>
+    <!-- <div class="bg-gray-100 dark:bg-[#121212] glass-effect p-6 rounded-lg shadow-lg text-center">
+        <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Modo Escuro com Tailwind</h1>
+        <p class="text-gray-700 dark:text-gray-300 mt-2">Clique no botão para alternar entre claro e escuro.</p>
+        <button id="toggleTheme" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded dark:bg-yellow-500">
+            Alternar Tema
+        </button>
+    </div> -->
+
+
+    <script src="footer.js"></script>
+</body>
+
+</html>
