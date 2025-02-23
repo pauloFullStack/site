@@ -15,61 +15,131 @@
 
 <!-- h-screen -->
 
-<body class="transition-colors duration-300 bg-white text-black dark:bg-[#121212] dark:text-white">
-
+<body class="transition-colors duration-100 bg-white text-black dark:bg-[#090909] dark:text-white">
 
     <div
-        class="flex items-center justify-center bg-white text-black dark:bg-[#121212] dark:text-white line-bottom-menu">
+        class="flex items-center justify-center bg-white text-black dark:bg-[#090909] dark:text-white line-bottom-menu">
         <div class="flex items-center justify-between w-full pt-3 pb-3 lg:pr-10 md:pr-10 pr-5 pl-5 mb-1">
             <div class="font-thin w-full">Paulo Web Developer</div>
             <div class="lg:flex lg:items-center lg:justify-end md:flex md:items-center md:justify-end hidden w-full">
-                <div class="font-thin mr-10">Início</div>
-                <div class="font-thin mr-10">Sobre</div>
-                <div class="font-thin mr-10">Serviços</div>
-                <div class="font-thin cursor-pointer" onclick="toggleTheme()">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="svg-sol" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 3v1.5M12 19.5V21M4.22 4.22l1.06 1.06M18.72 18.72l1.06 1.06M3 12h1.5M19.5 12H21M4.22 19.78l1.06-1.06M18.72 5.28l1.06-1.06M8.25 12a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0z" />
-                    </svg>
+
+                <div class="font-thin mr-10 flex items-center justify-center">
+
+                    <div class="mr-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 12l9-9m0 0l9 9m-2 0v7a2 2 0 01-2 2h-4m-4 0H6a2 2 0 01-2-2v-7m10 9v-4a2 2 0 00-4 0v4" />
+                        </svg>
+                    </div>
+                    <div>
+                        Início
+                    </div>
+
                 </div>
-                <div class="font-thin cursor-pointer" onclick="toggleTheme()">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" id="svg-lua" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M21.752 15.002A9.716 9.716 0 0112 21.75 9.75 9.75 0 019.002 3.247a6.75 6.75 0 0012.75 11.755z" />
-                    </svg>
+
+                <div class="font-thin mr-10 flex items-center justify-center">
+
+                    <div class="mr-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v2m0 4h.01M12 3a9 9 0 110 18 9 9 0 010-18z" />
+                        </svg>
+                    </div>
+                    <div>
+                        Sobre
+                    </div>
+
                 </div>
+
+                <div class="font-thin mr-10 flex items-center justify-center">
+
+                    <div class="mr-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16 7V6a2 2 0 00-2-2h-4a2 2 0 00-2 2v1M3 10h18M4 10h16v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-8z" />
+                        </svg>
+                    </div>
+                    <div>
+                        Serviços
+                    </div>
+
+                </div>
+
             </div>
-            <div class="lg:hidden md:hidden flex items-center justify-end cursor-pointer w-full relative"
-                onclick="toggleDropdown()">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-8 h-8">
+            <div class="lg:hidden md:hidden flex items-center justify-end cursor-pointer w-full relative pr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" onclick="toggleDropdown()"
+                    stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12h.008m5.992 0h.008m5.992 0h.008" />
                 </svg>
                 <div id="dropdown"
-                    class="absolute mt-48 bg-white border dark:border-gray-50 border-black-100 shadow-md rounded-md hidden bg-white text-black dark:bg-[#121212] dark:text-white z-10" >
-                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200 rounded-t-md">Início</a>
-                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200">Sobre</a>
-                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200">Serviços</a>
-                    <a onclick="toggleTheme()"
-                        class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200 rounded-b-md">
-                        <div class="font-thin cursor-pointer flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" id="svg-sol-mobile" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M12 3v1.5M12 19.5V21M4.22 4.22l1.06 1.06M18.72 18.72l1.06 1.06M3 12h1.5M19.5 12H21M4.22 19.78l1.06-1.06M18.72 5.28l1.06-1.06M8.25 12a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0z" />
-                            </svg>
+                    class="absolute mt-36 bg-white dark:border-gray-50 shadow-md rounded-md hidden bg-white text-black dark:bg-[#020202] dark:text-white z-10 line-border">
+                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200 rounded-t-md">
+                        <div class="font-thin flex items-center justify-start ">
+
+                            <div class="mr-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 12l9-9m0 0l9 9m-2 0v7a2 2 0 01-2 2h-4m-4 0H6a2 2 0 01-2-2v-7m10 9v-4a2 2 0 00-4 0v4" />
+                                </svg>
+                            </div>
+                            <div>
+                                Início
+                            </div>
+
                         </div>
-                        <div class="font-thin cursor-pointer flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" id="svg-lua-mobile" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M21.752 15.002A9.716 9.716 0 0112 21.75 9.75 9.75 0 019.002 3.247a6.75 6.75 0 0012.75 11.755z" />
-                            </svg>
+                    </a>
+                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200">
+                        <div class="font-thin flex items-center justify-start">
+
+                            <div class="mr-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 9v2m0 4h.01M12 3a9 9 0 110 18 9 9 0 010-18z" />
+                                </svg>
+                            </div>
+                            <div>
+                                Sobre
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200 rounded-b-md">
+                        <div class="font-thin flex items-center justify-start">
+
+                            <div class="mr-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16 7V6a2 2 0 00-2-2h-4a2 2 0 00-2 2v1M3 10h18M4 10h16v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-8z" />
+                                </svg>
+                            </div>
+                            <div>
+                                Serviços
+                            </div>
+
                         </div>
                     </a>
                 </div>
+            </div>
+            <div class="font-thin cursor-pointer" onclick="toggleTheme()">
+                <svg xmlns="http://www.w3.org/2000/svg" id="svg-sol" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 3v1.5M12 19.5V21M4.22 4.22l1.06 1.06M18.72 18.72l1.06 1.06M3 12h1.5M19.5 12H21M4.22 19.78l1.06-1.06M18.72 5.28l1.06-1.06M8.25 12a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0z" />
+                </svg>
+            </div>
+            <div class="font-thin cursor-pointer" onclick="toggleTheme()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" id="svg-lua" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.752 15.002A9.716 9.716 0 0112 21.75 9.75 9.75 0 019.002 3.247a6.75 6.75 0 0012.75 11.755z" />
+                </svg>
             </div>
         </div>
     </div>

@@ -41,7 +41,7 @@ function toggleDropdown() {
 
     event.stopPropagation();
 
-    hideThemeIcon('#svg-lua-mobile', '#svg-sol-mobile');
+    // hideThemeIcon('#svg-lua-mobile', '#svg-sol-mobile');
 
     document.getElementById("dropdown").classList.toggle("hidden");
 }
