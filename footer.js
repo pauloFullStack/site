@@ -51,3 +51,22 @@ document.addEventListener("click", function () {
     let dropdown = document.getElementById("dropdown");
     dropdown.classList.add("hidden");
 });
+
+function anchor(id, isMobile = false) {
+    const anchor = document.getElementById(id);
+    
+    // Rola até o elemento, mas ajusta a posição para cima
+    if(!isMobile){
+
+        window.scrollTo({
+            top: anchor.offsetTop - 60,  // Ajuste de 10px acima da posição da âncora
+            behavior: 'smooth'
+        });
+    }else{
+
+        window.scrollTo({
+            top: anchor.offsetTop - 70,  // Ajuste de 10px acima da posição da âncora
+            behavior: 'smooth'
+        });
+    }
+}

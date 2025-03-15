@@ -26,7 +26,8 @@
             <div class="dark:font-thin w-full lg:w-full md:w-full xl:w-full">Paulo Web Developer</div>
             <div class="lg:flex lg:items-center lg:justify-end md:flex md:items-center md:justify-end hidden w-full">
 
-                <div class="dark:font-thin mr-10 flex items-center justify-center cursor-pointer">
+                <div onclick="anchor('start')"
+                    class="dark:font-thin mr-10 flex items-center justify-center cursor-pointer">
 
                     <div class="mr-1.5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -41,7 +42,8 @@
 
                 </div>
 
-                <div class="dark:font-thin mr-10 flex items-center justify-center cursor-pointer">
+                <div onclick="anchor('about')"
+                    class="dark:font-thin mr-10 flex items-center justify-center cursor-pointer">
 
                     <div class="mr-1.5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -56,7 +58,8 @@
 
                 </div>
 
-                <div class="dark:font-thin mr-10 flex items-center justify-center cursor-pointer">
+                <div onclick="anchor('services')"
+                    class="dark:font-thin mr-10 flex items-center justify-center cursor-pointer">
 
                     <div class="mr-1.5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -95,55 +98,55 @@
                 </svg>
                 <div id="dropdown"
                     class="absolute mt-44 bg-white dark:border-gray-50 shadow-md rounded-md hidden bg-white text-black dark:bg-[#202020] dark:text-white z-10 line-border">
-                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200 rounded-t-md">
-                        <div class="dark:font-thin flex items-center justify-start ">
 
-                            <div class="mr-1.5">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M3 12l9-9m0 0l9 9m-2 0v7a2 2 0 01-2 2h-4m-4 0H6a2 2 0 01-2-2v-7m10 9v-4a2 2 0 00-4 0v4" />
-                                </svg>
-                            </div>
-                            <div>
-                                Início
-                            </div>
+                    <div onclick="anchor('start', true)"
+                        class="dark:font-thin flex items-center justify-start block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200 rounded-t-md">
 
+                        <div class="mr-1.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 12l9-9m0 0l9 9m-2 0v7a2 2 0 01-2 2h-4m-4 0H6a2 2 0 01-2-2v-7m10 9v-4a2 2 0 00-4 0v4" />
+                            </svg>
                         </div>
-                    </a>
-                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200">
-                        <div class="dark:font-thin flex items-center justify-start">
-
-                            <div class="mr-1.5">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 9v2m0 4h.01M12 3a9 9 0 110 18 9 9 0 010-18z" />
-                                </svg>
-                            </div>
-                            <div>
-                                Sobre
-                            </div>
-
+                        <div>
+                            Início
                         </div>
 
-                    </a>
-                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200">
-                        <div class="dark:font-thin flex items-center justify-start">
+                    </div>
 
-                            <div class="mr-1.5">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M16 7V6a2 2 0 00-2-2h-4a2 2 0 00-2 2v1M3 10h18M4 10h16v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-8z" />
-                                </svg>
-                            </div>
-                            <div>
-                                Serviços
-                            </div>
+                    <div onclick="anchor('about', true)"
+                        class="dark:font-thin flex items-center justify-start block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200">
 
+                        <div class="mr-1.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 9v2m0 4h.01M12 3a9 9 0 110 18 9 9 0 010-18z" />
+                            </svg>
                         </div>
-                    </a>
+                        <div>
+                            Sobre
+                        </div>
+
+                    </div>
+
+                    <div onclick="anchor('services', true)"
+                        class="dark:font-thin flex items-center justify-start block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200">
+
+                        <div class="mr-1.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16 7V6a2 2 0 00-2-2h-4a2 2 0 00-2 2v1M3 10h18M4 10h16v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-8z" />
+                            </svg>
+                        </div>
+                        <div>
+                            Serviços
+                        </div>
+
+                    </div>
+
                     <!-- <a href="#" class="block px-4 py-2 dark:hover:bg-gray-500 hover:bg-gray-200 rounded-b-md">
                         <div class="dark:font-thin flex items-center justify-start ml-0.5">
 
@@ -179,102 +182,107 @@
         </div>
     </div>
 
-    <div class="dark:font-thin font-light p-5">
-        <div class="mt-20 mb-16">
-            <p class="text-3xl mt-16 mb-5 text-center">
-                Desenvolvedor full stack
-            </p>
-        </div>
-
-        <div class="mb-20">
-            <p class="text-3xl mb-5 text-center">
-                Sobre
-            </p>
-            <p class="leading-normal text-xl mb-10 xl:pl-64 xl:pr-64 lg:pl-48 lg:pr-48">
-                Olá! Meu nome é Paulo Renato Alves da Silva, sou um desenvolvedor full stack apaixonado por tecnologia e
-                inovação. Com 9 anos de estudo e 6 anos de experiência profissional, desenvolvo soluções eficientes para
-                web, desde a concepção até a implementação.
-            </p>
-            <p class="leading-normal text-xl mb-10 xl:pl-64 xl:pr-64 lg:pl-48 lg:pr-48">
-                Minha expertise abrange tanto o front-end quanto o back-end, utilizando tecnologias modernas como React,
-                Vue.js, Angular, Node.js, C#, PHP e Laravel. Além disso, possuo experiência com bancos de dados SQL e
-                NoSQL, administração de servidores na AWS, e configuração de ambientes com Docker e Nginx.
-            </p>
-            <p class="leading-normal text-xl mb-10 xl:pl-64 xl:pr-64 lg:pl-48 lg:pr-48">
-                Sou um profissional comprometido com a qualidade do código, boas práticas e metodologias ágeis como
-                Scrum. Meu objetivo é desenvolver sistemas escaláveis, intuitivos e eficientes, agregando valor a cada
-                projeto.
-            </p>
-        </div>
-
-        <div class="mb-20">
-            <!-- <p class="text-3xl mb-5 text-center">
-                Serviços
-            </p> -->
-            <div class="xl:pl-64 xl:pr-64 lg:pl-48 lg:pr-48">
-
-                <p class="text-3xl mb-5 text-center">
-                    Serviços
+    <section>
+        <div id="start" class="dark:font-thin font-light p-5">
+            <div class="mt-20 mb-16">
+                <p class="text-3xl mt-16 mb-5 text-center">
+                    Desenvolvedor full stack
                 </p>
-                <!-- <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-gray-200 mb-8">Serviços</h2> -->
-                <div class="space-y-6">
-                    <div
-                        class="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 shadow-md">
-                        <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300">Desenvolvimento Web Full
-                            Stack
-                        </h3>
-                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-2">
-                            <li>Criação de sites e sistemas web responsivos</li>
-                            <li>Desenvolvimento de aplicações SPA e PWA</li>
-                            <li>Arquitetura MVC e utilização de ORMs como Sequelize e TypeORM</li>
-                        </ul>
-                    </div>
-
-                    <div
-                        class="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 shadow-md">
-                        <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300">Back-End e APIs</h3>
-                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-2">
-                            <li>Construção de APIs REST e GraphQL</li>
-                            <li>Autenticação JWT e segurança de dados</li>
-                            <li>Integração com bancos de dados MySQL, PostgreSQL e SQL Server</li>
-                        </ul>
-                    </div>
-
-                    <div
-                        class="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 shadow-md">
-                        <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300">Front-End Moderno</h3>
-                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-2">
-                            <li>Desenvolvimento de interfaces intuitivas com React, Vue.js e Angular</li>
-                            <li>Implementação de componentes reutilizáveis e design responsivo</li>
-                            <li>Uso avançado de CSS, SCSS, Bootstrap e Tailwind</li>
-                        </ul>
-                    </div>
-
-                    <div
-                        class="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 shadow-md">
-                        <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300">Infraestrutura e DevOps</h3>
-                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-2">
-                            <li>Configuração de servidores AWS (EC2, RDS, Route 53)</li>
-                            <li>Gerenciamento de servidores Linux com Nginx e Apache</li>
-                            <li>Automação de rotinas com Crontab e Docker</li>
-                        </ul>
-                    </div>
-
-                    <div
-                        class="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 shadow-md">
-                        <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300">Integrações e Otimizações
-                        </h3>
-                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-2">
-                            <li>Integração com APIs externas como Facebook, Pagar.me e Cielo</li>
-                            <li>Geração e manipulação de relatórios em diversos formatos (XML, PDF, TXT)</li>
-                            <li>Otimização de performance para aplicações web</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
 
+            <div id="about" class="mb-20">
+                <p class="text-3xl mb-5 text-center">
+                    Sobre
+                </p>
+                <p class="leading-normal text-xl mb-10 xl:pl-64 xl:pr-64 lg:pl-48 lg:pr-48">
+                    Olá! Meu nome é Paulo Renato Alves da Silva, sou um desenvolvedor full stack apaixonado por
+                    tecnologia e
+                    inovação. Com 9 anos de estudo e 6 anos de experiência profissional, desenvolvo soluções eficientes
+                    para
+                    web, desde a concepção até a implementação.
+                </p>
+                <p class="leading-normal text-xl mb-10 xl:pl-64 xl:pr-64 lg:pl-48 lg:pr-48">
+                    Minha expertise abrange tanto o front-end quanto o back-end, utilizando tecnologias modernas como
+                    React,
+                    Vue.js, Angular, Node.js, C#, PHP e Laravel. Além disso, possuo experiência com bancos de dados SQL
+                    e
+                    NoSQL, administração de servidores na AWS, e configuração de ambientes com Docker e Nginx.
+                </p>
+                <p class="leading-normal text-xl mb-10 xl:pl-64 xl:pr-64 lg:pl-48 lg:pr-48">
+                    Sou um profissional comprometido com a qualidade do código, boas práticas e metodologias ágeis como
+                    Scrum. Meu objetivo é desenvolver sistemas escaláveis, intuitivos e eficientes, agregando valor a
+                    cada
+                    projeto.
+                </p>
+            </div>
+
+            <div id="services" class="mb-20">
+                <div class="xl:pl-64 xl:pr-64 lg:pl-48 lg:pr-48">
+
+                    <p class="text-3xl mb-5 text-center">
+                        Serviços
+                    </p>
+                    <!-- <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-gray-200 mb-8">Serviços</h2> -->
+                    <div class="space-y-6">
+                        <div
+                            class="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300">Desenvolvimento Web Full
+                                Stack
+                            </h3>
+                            <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-2">
+                                <li>Criação de sites e sistemas web responsivos</li>
+                                <li>Desenvolvimento de aplicações SPA e PWA</li>
+                                <li>Arquitetura MVC e utilização de ORMs como Sequelize e TypeORM</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300">Back-End e APIs</h3>
+                            <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-2">
+                                <li>Construção de APIs REST e GraphQL</li>
+                                <li>Autenticação JWT e segurança de dados</li>
+                                <li>Integração com bancos de dados MySQL, PostgreSQL e SQL Server</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300">Front-End Moderno</h3>
+                            <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-2">
+                                <li>Desenvolvimento de interfaces intuitivas com React, Vue.js e Angular</li>
+                                <li>Implementação de componentes reutilizáveis e design responsivo</li>
+                                <li>Uso avançado de CSS, SCSS, Bootstrap e Tailwind</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300">Infraestrutura e DevOps
+                            </h3>
+                            <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-2">
+                                <li>Configuração de servidores AWS (EC2, RDS, Route 53)</li>
+                                <li>Gerenciamento de servidores Linux com Nginx e Apache</li>
+                                <li>Automação de rotinas com Crontab e Docker</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300">Integrações e Otimizações
+                            </h3>
+                            <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-2">
+                                <li>Integração com APIs externas como Facebook, Pagar.me e Cielo</li>
+                                <li>Geração e manipulação de relatórios em diversos formatos (XML, PDF, TXT)</li>
+                                <li>Otimização de performance para aplicações web</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- <div>
         <div class="mb-3">
